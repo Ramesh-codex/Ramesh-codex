@@ -1,89 +1,90 @@
 <p align="center">
-  <img src="./assets/profile-banner.svg" alt="Hi, I'm Ramesh — Backend, Distributed Systems, and AI Infrastructure Engineering. A coordinator fans out to three search shards." width="100%" />
+  <img src="./assets/profile-banner.svg" alt="Ramesh Mandamanedi — backend, distributed systems and AI infrastructure engineering, illustrated as a search coordinator and three shards" width="100%" />
+</p>
+
+<h2 align="center">Ramesh Mandamanedi</h2>
+<p align="center">
+  <strong>Computer Science master's graduate | Backend & distributed systems | AI engineering & reliability</strong><br />
+  I build measurable systems: event-driven services, search infrastructure, and AI tools with verification and human control.<br />
+  <strong>Open to full-time Software Engineer, Backend Engineer, and AI/Infrastructure Engineer roles.</strong>
 </p>
 
 <p align="center">
-  <a href="https://distributed-search-portfolio-demo.onrender.com/"><img alt="Open distributed search demo" src="https://img.shields.io/badge/Live-DISTRIBUTED_SEARCH-81e6c3?style=for-the-badge&labelColor=14243a" /></a>
+  <a href="https://distributed-search-portfolio-demo.onrender.com/"><img alt="Search engine live demo" src="https://img.shields.io/badge/DEMO-Distributed_Search-81e6c3?style=for-the-badge&labelColor=14243a" /></a>
   &nbsp;
-  <a href="https://distributed-search-portfolio-demo-rvv6.onrender.com/"><img alt="Open developer documentation search" src="https://img.shields.io/badge/Live-DEV_DOCS_SEARCH-98bfff?style=for-the-badge&labelColor=14243a" /></a>
+  <a href="https://distributed-search-portfolio-demo-rvv6.onrender.com/"><img alt="Developer documentation search live demo" src="https://img.shields.io/badge/DEMO-Developer_Docs_Search-98bfff?style=for-the-badge&labelColor=14243a" /></a>
 </p>
 
 <p align="center">
-  <strong>One hand-built search engine. Two public, working applications.</strong><br />
-  Building dependable backends, retrieval infrastructure, and practical AI foundations.
+  <a href="https://github.com/Ramesh-codex/ramesh-codex.github.io">Portfolio source</a> ·
+  <a href="https://www.linkedin.com/in/ramesh-mandamanedi-180878239/">LinkedIn</a> ·
+  <a href="https://github.com/Ramesh-codex?tab=repositories">All repositories</a>
 </p>
 
 ---
 
-## 🚀 Featured projects
+## Selected engineering projects
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>01 · Distributed Search Engine</h3>
-      <p><strong>The search infrastructure.</strong> Custom inverted index and BM25 ranking, with a FastAPI coordinator distributing queries across three HTTP shard processes.</p>
-      <p>🔍 Ranked results &nbsp;·&nbsp; 🧩 Scatter–gather &nbsp;·&nbsp; 🛡️ Circuit breakers</p>
-      <p><a href="https://distributed-search-portfolio-demo.onrender.com/"><strong>↗ Live demo</strong></a> &nbsp;·&nbsp; <a href="https://github.com/Ramesh-codex/distributed-search-engine/tree/deployment-demo">Source code</a> &nbsp;·&nbsp; <a href="https://distributed-search-portfolio-demo.onrender.com/docs">API docs</a></p>
+      <h3><a href="https://github.com/Ramesh-codex/fleetops">01 · FleetOps</a></h3>
+      <p><strong>Event-driven backend + human-approved AI decisions</strong></p>
+      <p>School-bus GPS simulation using Kafka, PostgreSQL/PostGIS, FastAPI, and an AI-assisted breakdown recovery workflow. The model proposes a replacement; deterministic checks and a dispatcher control the actual assignment.</p>
+      <p><strong>Evidence:</strong> 18 crash-injection runs between database and Kafka commits produced <strong>0 duplicate or missing parent alerts</strong> in the documented tests. Synthetic data only.</p>
+      <p><a href="https://github.com/Ramesh-codex/fleetops">Code and findings ↗</a></p>
     </td>
     <td width="50%" valign="top">
-      <h3>02 · Developer Documentation Search</h3>
-      <p><strong>A real application on top of that engine.</strong> Search <strong>188 indexed excerpts</strong> from 20 official FastAPI, HTTPX, and Docker documentation pages.</p>
-      <p>📚 Source filters &nbsp;·&nbsp; 🔗 Original documentation links &nbsp;·&nbsp; ⚡ BM25 results</p>
-      <p><a href="https://distributed-search-portfolio-demo-rvv6.onrender.com/"><strong>↗ Live app</strong></a> &nbsp;·&nbsp; <a href="https://github.com/Ramesh-codex/distributed-search-engine/tree/developer-docs-search">Source code</a> &nbsp;·&nbsp; <a href="https://distributed-search-portfolio-demo-rvv6.onrender.com/docs">API docs</a></p>
+      <h3><a href="https://github.com/Ramesh-codex/agent-bugfixer">02 · Agent Bugfixer</a></h3>
+      <p><strong>Evaluation and safety for AI coding agents</strong></p>
+      <p>LangGraph Researcher → Coder → Reviewer workflow, a 15-bug adversarial test zoo, offline scoring against pristine tests, network-disabled Docker runs, and human approval before any draft PR.</p>
+      <p><strong>Evidence:</strong> Reviewer v2 fixed <strong>40/45 attempts</strong>; all <strong>40 approvals matched the scorer</strong>, with 5 failed attempts escalated. It did <em>not</em> outperform the single agent's fix rate.</p>
+      <p><a href="https://github.com/Ramesh-codex/agent-bugfixer">Code, evaluation and limits ↗</a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Ramesh-codex/distributed-search-engine">03 · Distributed Search Engine</a></h3>
+      <p><strong>Search and distributed-systems fundamentals built from scratch</strong></p>
+      <p>Custom inverted index and BM25 ranking, consistent-hash partitioning, three search shards, a FastAPI coordinator, scatter–gather and circuit breakers.</p>
+      <p><strong>Evidence:</strong> <strong>1.53 ms p50</strong> local single-node search latency at 100K documents; measured consistent-hash maximum deviation fell from <strong>35.6% to 0.8%</strong> as virtual nodes increased.</p>
+      <p><a href="https://distributed-search-portfolio-demo.onrender.com/">Search demo ↗</a> · <a href="https://distributed-search-portfolio-demo-rvv6.onrender.com/">Docs search app ↗</a> · <a href="https://github.com/Ramesh-codex/distributed-search-engine">Code ↗</a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Ramesh-codex/modelforge">04 · ModelForge AI</a></h3>
+      <p><strong>LLM gateway and failure-aware request handling</strong></p>
+      <p>One streaming interface for OpenAI-, Anthropic-, and Gemini-style providers, with usage/cost estimates, timeouts, bounded retries, fallback, rate limits and classification of potential double-billing risk.</p>
+      <p><strong>Status:</strong> v0.2 (Phases 1–2). Mock providers and offline tests are implemented; live real-provider calls have <strong>not</strong> been verified. Context budgeting and dashboard are future work.</p>
+      <p><a href="https://github.com/Ramesh-codex/modelforge">Code and roadmap ↗</a></p>
     </td>
   </tr>
 </table>
 
-> **Try them:** Search `circuit breaker` in the engine demo, or `dependency injection` in DevDocs Search. Both run publicly over HTTPS. Free hosting may need a cold start after inactivity.
+**More work worth exploring**
 
-## ⚙️ Under the hood
+- **[Stock Sentiment Pipeline](https://github.com/Ramesh-codex/stock-sentiment-pipeline)** — Redis Streams → FinBERT → FastAPI, with Prometheus/Grafana observability. CPU-only dependency selection reduced the documented Docker image from **11.7 GB to 1.6 GB**.
+- **[Infrastructure Automation for AI Workloads](https://github.com/Ramesh-codex/infra-automation-ai-workloads)** — Redis-backed scheduler, workers and operational metrics. Concurrency limits and retry backoff reduced **simulated** task failures by about **52%** in measured local windows.
+- **[Engineering portfolio](https://github.com/Ramesh-codex/ramesh-codex.github.io)** — Responsive static portfolio with Studio, Terminal and Editorial views, project summaries and a résumé.
 
-- **Retrieval:** Hand-written inverted index and BM25 scoring rather than a managed search engine.
-- **Distribution:** Consistent-hash document partitioning, parallel HTTP scatter–gather, and top-K result merging.
-- **Resilience:** Circuit breakers, timeouts, and explicit degraded/partial-result reporting.
-- **Delivery:** Reproducible Docker builds, prebuilt indexes, GitHub Actions integration tests, and Render deployments.
+## How I approach engineering
 
-<details>
-<summary><strong>▸ View the search architecture</strong></summary>
-<br />
+I try to make system behavior **measurable and explainable**, not just demo-ready. My repositories document failure injections, regressions, latency distributions, observability bugs, and cases where an approach **didn't** improve the result.
 
-```mermaid
-flowchart TD
-    U[Browser or API client] --> C[FastAPI coordinator]
-    C -->|Parallel HTTP| S1[Shard 01]
-    C -->|Parallel HTTP| S2[Shard 02]
-    C -->|Parallel HTTP| S3[Shard 03]
-    S1 -->|Ranked hits| C
-    S2 -->|Ranked hits| C
-    S3 -->|Ranked hits| C
-    C --> R[Merge top-K BM25 results]
-    R --> U
-```
+For AI-powered workflows, my emphasis is on **scoped tools, deterministic validation, isolated execution, and human approval** for consequential actions. For backend services, it is on **correctness under failures, event processing, query performance and practical observability**.
 
-</details>
+## Tools and technologies
 
-## 🧰 Technologies I use
+| Area | Technologies used in these projects |
+|---|---|
+| **Backend & data** | Python, FastAPI, REST APIs, PostgreSQL, PostGIS, Redis, Kafka |
+| **Search & AI** | BM25, inverted indexes, LangGraph, FinBERT, streaming LLM adapters |
+| **Infrastructure** | Docker, Docker Compose, nginx, Render, GitHub Actions |
+| **Testing & observability** | pytest, fault injection, benchmarks, Prometheus, Grafana |
 
-<p>
-  <img alt="Python" src="https://img.shields.io/badge/Python-253E5C?style=flat-square&logo=python&logoColor=white" />
-  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-253E5C?style=flat-square&logo=fastapi&logoColor=white" />
-  <img alt="Docker" src="https://img.shields.io/badge/Docker-253E5C?style=flat-square&logo=docker&logoColor=white" />
-  <img alt="nginx" src="https://img.shields.io/badge/nginx-253E5C?style=flat-square&logo=nginx&logoColor=white" />
-  <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-253E5C?style=flat-square&logo=githubactions&logoColor=white" />
-  <img alt="REST APIs" src="https://img.shields.io/badge/REST_APIs-253E5C?style=flat-square" />
-  <img alt="BM25 retrieval" src="https://img.shields.io/badge/BM25_Search-253E5C?style=flat-square" />
-  <img alt="Render" src="https://img.shields.io/badge/Render-253E5C?style=flat-square&logo=render&logoColor=white" />
-</p>
+## Connect
 
-## ✅ Tested and deployed
+If you're hiring for backend engineering, distributed systems, AI engineering or infrastructure roles, I'd be glad to discuss the designs, tradeoffs and test evidence behind these projects.
 
-Both applications have passed GitHub Actions Docker and HTTP integration checks. The documentation search application also passed a **public HTTPS test** covering real FastAPI, HTTPX, and Docker searches across all three shards.
+**[LinkedIn](https://www.linkedin.com/in/ramesh-mandamanedi-180878239/)** · **[Portfolio repository](https://github.com/Ramesh-codex/ramesh-codex.github.io)** · **[GitHub projects](https://github.com/Ramesh-codex?tab=repositories)**
 
-**[View public API verification ↗](https://github.com/Ramesh-codex/distributed-search-engine/actions/runs/41043841430)** &nbsp;·&nbsp; **[Read implementation notes ↗](https://github.com/Ramesh-codex/distributed-search-engine/tree/developer-docs-search/docs_app)**
-
-<sub>**Engineering note:** The hosted applications run three independent HTTP shard *processes* within one free Render instance—not on three separate machines. Their small demo datasets and hosting conditions are different from the original engine's larger benchmark corpus.</sub>
-
----
-
-<p align="center"><strong>Interested in backend engineering, distributed systems, search infrastructure, and AI platform roles.</strong><br />
-<a href="https://github.com/Ramesh-codex/distributed-search-engine">Explore my engineering work ↗</a></p>
+<sub>**Measurement scope:** Search p50 is from the 100K-document local benchmark, not the public demo. The hosted search demo's three shard processes share one free Render instance; they are not a multi-machine deployment. FleetOps uses synthetic data, the infrastructure-failure experiment is simulated, and ModelForge's real-provider adapters have not been live-verified. Demo links may cold-start on free hosting.</sub>
